@@ -29,7 +29,7 @@ export function TelegramBot() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          <Card className="border-2 bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm">
+          <Card className="border-2">
             <CardContent className="pt-6">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center">
@@ -48,7 +48,7 @@ export function TelegramBot() {
             </CardContent>
           </Card>
 
-          <Card className="border-2 bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm">
+          <Card className="border-2">
             <CardContent className="pt-6">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center">
