@@ -1,19 +1,42 @@
-import { Settings, Smartphone } from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
-import { Badge } from "./ui/badge";
+import { Shield, Key, Lock, Network, Wifi, Settings } from "lucide-react";
+import { Card, CardContent } from "./ui/card";
 
-const methods = [
+const protocols = [
   {
-    category: "Ручная настройка",
-    icon: Settings,
-    protocols: ["IKEv2", "L2TP", "SSTP"],
-    color: "bg-purple-100 text-purple-700"
+    name: "IKEv2",
+    icon: Shield,
+    color: "bg-blue-500",
+    description: "Встроенный в iOS, macOS, Windows"
   },
   {
-    category: "Через приложения",
-    icon: Smartphone,
-    protocols: ["OpenVPN", "WireGuard", "SSTP Client"],
-    color: "bg-blue-100 text-blue-700"
+    name: "L2TP",
+    icon: Key,
+    color: "bg-green-500",
+    description: "Стандартный протокол"
+  },
+  {
+    name: "SSTP",
+    icon: Lock,
+    color: "bg-purple-500",
+    description: "Безопасный туннель"
+  },
+  {
+    name: "OpenVPN",
+    icon: Network,
+    color: "bg-orange-500",
+    description: "Через приложение"
+  },
+  {
+    name: "WireGuard",
+    icon: Wifi,
+    color: "bg-cyan-500",
+    description: "Современный протокол"
+  },
+  {
+    name: "SSTP Client",
+    icon: Settings,
+    color: "bg-indigo-500",
+    description: "Ваше приложение"
   }
 ];
 
@@ -33,37 +56,29 @@ export function ConnectionMethods() {
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl mb-3">Варианты подключения</h2>
           <p className="text-base text-muted-foreground max-w-2xl mx-auto">
-            Множество способов подключения для любых устройств
+            Поддержка всех популярных VPN протоколов
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          {methods.map((method, index) => (
-            <Card key={index} className="border-2 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
-              <CardHeader>
-                <div className="flex items-center gap-3 mb-2">
-                  <div className={`w-12 h-12 rounded-lg ${method.color} flex items-center justify-center`}>
-                    <method.icon className="w-6 h-6" />
-                  </div>
-                  <CardTitle>{method.category}</CardTitle>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
+          {protocols.map((protocol, index) => (
+            <Card key={index} className="border hover:shadow-lg transition-all group">
+              <CardContent className="pt-6 text-center">
+                <div className={`w-16 h-16 ${protocol.color} rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform`}>
+                  <protocol.icon className="w-8 h-8 text-white" />
                 </div>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-2">
-                  {method.protocols.map((protocol, idx) => (
-                    <Badge key={idx} variant="secondary" className="text-sm px-3 py-1">
-                      {protocol}
-                    </Badge>
-                  ))}
-                </div>
+                <h3 className="font-semibold mb-1">{protocol.name}</h3>
+                <p className="text-xs text-muted-foreground">{protocol.description}</p>
               </CardContent>
             </Card>
           ))}
         </div>
 
-        <p className="text-center text-muted-foreground mt-8 max-w-3xl mx-auto">
-          SSTP Client может быть отдельным приложением, подготовленным командой под ваш сервис
-        </p>
+        <div className="mt-8 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800 max-w-3xl mx-auto">
+          <p className="text-sm text-center">
+            💡 <span className="font-medium">SSTP Client</span> может быть отдельным брендированным приложением, подготовленным под ваш сервис
+          </p>
+        </div>
       </div>
     </section>
   );
