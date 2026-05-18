@@ -5,7 +5,7 @@ import { VPNScheme } from "./components/VPNScheme";
 import { HowItWorks } from "./components/HowItWorks";
 import { Features } from "./components/Features";
 import { Pricing } from "./components/Pricing";
-import { ConnectionMethods } from "./components/ConnectionMethods";
+import { ConnectionMethodsScroll } from "./components/ConnectionMethodsScroll";
 import { TelegramBot } from "./components/TelegramBot";
 import { Benefits } from "./components/Benefits";
 import { TargetAudience } from "./components/TargetAudience";
