@@ -3,12 +3,16 @@ import { ArrowRight, MessageCircle } from "lucide-react";
 
 export function FinalCTA() {
   return (
-    <section className="py-12 bg-gradient-to-br from-orange-500 via-red-500 to-pink-500 text-white relative overflow-hidden">
-      {/* Параллакс эффект */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-0 left-1/4 w-64 h-64 bg-yellow-300 rounded-full filter blur-3xl"></div>
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-300 rounded-full filter blur-3xl"></div>
-      </div>
+    <section className="py-12 bg-blue-600 text-white relative overflow-hidden">
+      {/* Технологический фотофон */}
+      <div
+        className="absolute inset-0 opacity-10"
+        style={{
+          backgroundImage: `url('https://images.unsplash.com/photo-1673813497649-9b1ff22e6185?w=1920&q=80')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}
+      ></div>
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl mb-4">

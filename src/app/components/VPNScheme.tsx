@@ -3,11 +3,8 @@ import { Card, CardContent } from "./ui/card";
 
 export function VPNScheme() {
   return (
-    <section className="py-12 bg-gradient-to-br from-purple-100 via-pink-50 to-orange-100 dark:bg-gradient-to-br dark:from-purple-950 dark:via-gray-900 dark:to-orange-950 relative overflow-hidden">
-      {/* Параллакс декор */}
-      <div className="absolute top-20 right-10 w-32 h-32 bg-yellow-300 dark:bg-yellow-600 rounded-full filter blur-2xl opacity-40"></div>
-      <div className="absolute bottom-20 left-10 w-40 h-40 bg-pink-300 dark:bg-pink-600 rounded-full filter blur-2xl opacity-40"></div>
-      <div className="container mx-auto px-4 md:px-6 relative z-10">
+    <section className="py-12 bg-white dark:bg-gray-900">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl mb-3">Как это работает</h2>
           <p className="text-base text-muted-foreground max-w-2xl mx-auto">

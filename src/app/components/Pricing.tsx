@@ -4,11 +4,16 @@ import { Button } from "./ui/button";
 
 export function Pricing() {
   return (
-    <section className="py-12 bg-gradient-to-br from-yellow-100 via-orange-100 to-red-100 dark:bg-gradient-to-br dark:from-yellow-950 dark:via-orange-950 dark:to-red-950 relative overflow-hidden">
-      {/* Декоративные монеты */}
-      <div className="absolute top-10 left-20 text-6xl opacity-10">💰</div>
-      <div className="absolute bottom-10 right-20 text-6xl opacity-10">💵</div>
-      <div className="absolute top-1/2 left-1/4 text-4xl opacity-10">💳</div>
+    <section className="py-12 bg-slate-50 dark:bg-gray-800 relative overflow-hidden">
+      {/* Фотофон серверной */}
+      <div
+        className="absolute inset-0 opacity-5 dark:opacity-10"
+        style={{
+          backgroundImage: `url('https://images.unsplash.com/photo-1614508569207-3295ac89d75f?w=1920&q=80')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}
+      ></div>
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl mb-3">Стоимость</h2>

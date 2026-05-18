@@ -9,7 +9,7 @@ const requirements = [
 
 export function Requirements() {
   return (
-    <section className="py-12 bg-gradient-to-br from-lime-100 to-green-100 dark:bg-gradient-to-br dark:from-lime-950 dark:to-green-950">
+    <section className="py-12 bg-slate-50 dark:bg-gray-800">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl mb-3">Что нужно от вас</h2>

@@ -15,22 +15,15 @@ const adminFeatures = [
 
 export function TelegramBot() {
   return (
-    <section className="py-12 bg-gradient-to-br from-cyan-500 to-blue-600 text-white relative overflow-hidden">
-      {/* Декоративная сетка */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0" style={{
-          backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)',
-          backgroundSize: '50px 50px'
-        }}></div>
-      </div>
-      <div className="container mx-auto px-4 md:px-6 relative z-10">
+    <section className="py-12 bg-slate-50 dark:bg-gray-800">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-10">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full mb-4">
-            <MessageCircle className="w-4 h-4 text-white" />
-            <span className="text-sm text-white font-medium">Управление через Telegram</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 dark:bg-blue-900/30 rounded-full mb-4 border border-blue-100 dark:border-blue-800">
+            <MessageCircle className="w-4 h-4 text-blue-600 dark:text-blue-400" />
+            <span className="text-sm text-blue-700 dark:text-blue-300">Управление через Telegram</span>
           </div>
-          <h2 className="text-3xl md:text-4xl mb-3 text-white">Telegram-бот</h2>
-          <p className="text-base text-white/90 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl mb-3">Telegram-бот</h2>
+          <p className="text-base text-muted-foreground max-w-2xl mx-auto">
             Простое управление VPN прямо из Telegram
           </p>
         </div>

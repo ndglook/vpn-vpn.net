@@ -19,8 +19,17 @@ const methods = [
 
 export function ConnectionMethods() {
   return (
-    <section className="py-12 bg-white dark:bg-gray-900">
-      <div className="container mx-auto px-4 md:px-6">
+    <section className="py-12 bg-slate-50 dark:bg-gray-800 relative overflow-hidden">
+      {/* Фотофон */}
+      <div
+        className="absolute inset-0 opacity-5 dark:opacity-10"
+        style={{
+          backgroundImage: `url('https://images.unsplash.com/photo-1526887593587-a307ea5d46b4?w=1920&q=80')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}
+      ></div>
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl mb-3">Варианты подключения</h2>
           <p className="text-base text-muted-foreground max-w-2xl mx-auto">

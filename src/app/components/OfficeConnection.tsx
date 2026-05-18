@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 
 export function OfficeConnection() {
   return (
-    <section className="py-12 bg-gradient-to-br from-blue-100 to-indigo-100 dark:bg-gradient-to-br dark:from-blue-950 dark:to-indigo-950">
+    <section className="py-12 bg-slate-50 dark:bg-gray-800">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl mb-3">Подключение офиса или квартиры</h2>

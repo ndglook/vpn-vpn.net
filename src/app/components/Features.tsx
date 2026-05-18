@@ -14,10 +14,7 @@ const features = [
 
 export function Features() {
   return (
-    <section className="py-12 bg-white dark:bg-gray-950 relative overflow-hidden">
-      {/* Декоративные элементы */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-blue-100 dark:bg-blue-900/20 rounded-full filter blur-3xl opacity-30"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-100 dark:bg-purple-900/20 rounded-full filter blur-3xl opacity-30"></div>
+    <section className="py-12 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl mb-3">Что вы получаете</h2>
@@ -41,6 +38,6 @@ export function Features() {
           </CardContent>
         </Card>
       </div>
-      </section>
+    </section>
   );
 }

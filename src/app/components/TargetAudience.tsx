@@ -26,7 +26,7 @@ const audiences = [
 
 export function TargetAudience() {
   return (
-    <section className="py-12 bg-gradient-to-br from-teal-100 to-cyan-100 dark:bg-gradient-to-br dark:from-teal-950 dark:to-cyan-950">
+    <section className="py-12 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl mb-3">Для кого это</h2>

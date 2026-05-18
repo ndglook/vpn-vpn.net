@@ -26,7 +26,7 @@ const benefits = [
 
 export function Benefits() {
   return (
-    <section className="py-12 bg-gradient-to-br from-green-50 to-emerald-100 dark:bg-gradient-to-br dark:from-gray-900 dark:to-gray-800">
+    <section className="py-12 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl mb-3">Почему это удобнее обычного VPN</h2>
